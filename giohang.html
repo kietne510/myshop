@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Cửa Hàng Đồ Gia Dụng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="trangchu.html"><img src="image/logoptknobg.png" alt=""></a>
+            </div>
+            <div class="tim-kiem">
+                <input type="text" placeholder="Bạn tìm gì hôm nay?">
+                <button>Tìm</button>
+            </div>
+            <nav class="dieu-huong">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="danhmuc.html">Sản Phẩm</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Liên Hệ</a>
+            </nav>
+            <div class="gio-hang-icon">
+                <a href="giohang.html">
+                    <img src="./image/bieutuonggiohang.png" alt="Giỏ hàng">
+                    <span id="so-luong-trong-gio">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tieu-de-trang">
+                <h1>Giỏ Hàng Của Bạn</h1>
+            </div>
+            <div class="noi-dung-gio-hang" id="khu-vuc-gio-hang">
+                <table class="bang-gio-hang">
+                    <thead>
+                        <tr>
+                            <th class="cot-san-pham">Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="than-bang-gio-hang">
+                        </tbody>
+                </table>
+
+                <div class="tong-ket-gio-hang">
+                    <div class="ma-giam-gia">
+                        <input type="text" placeholder="Nhập mã giảm giá">
+                        <button>Áp dụng</button>
+                    </div>
+                    <div class="tong-cong">
+                        <span>Tổng cộng:</span>
+                        <strong id="tong-tien-gio-hang">0đ</strong>
+                    </div>
+                    <a href="thanhtoan.html" class="nut-thanh-toan">Tiến Hành Thanh Toán</a>
+                </div>
+
+                <div class="gio-hang-trong" id="thong-bao-gio-hang-trong" style="display: none;">
+                    <p>Chưa có sản phẩm nào trong giỏ hàng của bạn.</p>
+                    <a href="danhmuc.html">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="cot-footer">
+                <h3>Về Chúng Tôi</h3>
+                <p>Cửa hàng chuyên cung cấp các giải pháp gia dụng hiện đại, giúp cuộc sống của bạn trở nên dễ dàng và tiện nghi hơn.</p>
+            </div>
+            <div class="cot-footer">
+                <h3>Chăm Sóc Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                </ul>
+            </div>
+            <div class="cot-footer">
+                <h3>Liên Hệ</h3>
+                <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                <p>Email: hotro@email.com</p>
+                <p>Điện thoại: 0987 654 321</p>
+            </div>
+        </div>
+        <div class="ban-quyen">
+            <p>&copy; 2025 Cửa Hàng Của Bạn.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Cửa Hàng Đồ Gia Dụng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-thanh-toan">
+        <div class="container">
+            <div class="logo">
+                <a href="trangchu.html"><img src="image/logoptknobg.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="giao-dien-thanh-toan">
+                <div class="thong-tin-khach-hang">
+                    <h2>Thông tin giao hàng</h2>
+                    <form id="form-thanh-toan">
+                        <div class="nhom-form">
+                            <label for="ho-ten">Họ và tên</label>
+                            <input type="text" id="ho-ten" required>
+                        </div>
+                        <div class="nhom-form">
+                            <label for="so-dien-thoai">Số điện thoại</label>
+                            <input type="tel" id="so-dien-thoai" required>
+                        </div>
+                        <div class="nhom-form">
+                            <label for="dia-chi">Địa chỉ</label>
+                            <input type="text" id="dia-chi" placeholder="Số nhà, tên đường, phường/xã..." required>
+                        </div>
+                        
+                        <h2>Phương thức thanh toán</h2>
+                        <div class="phuong-thuc-thanh-toan">
+                            <label>
+                                <input type="radio" name="phuong-thuc" value="cod" checked>
+                                Thanh toán khi nhận hàng (COD)
+                            </label>
+                            <label>
+                                <input type="radio" name="phuong-thuc" value="bank">
+                                Chuyển khoản ngân hàng
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="tom-tat-don-hang">
+                    <h3>Đơn hàng của bạn</h3>
+                    <div id="danh-sach-san-pham-don-hang">
+                        </div>
+                    <div class="tong-cong-don-hang">
+                        <span>Tổng cộng</span>
+                        <strong id="tong-tien-don-hang">0đ</strong>
+                    </div>
+                    <button id="nut-hoan-tat-don-hang" class="nut-thanh-toan">HOÀN TẤT ĐƠN HÀNG</button>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-thanh-toan">
+        <div class="ban-quyen">
+            <p>&copy; 2025 Cửa Hàng Của Bạn.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

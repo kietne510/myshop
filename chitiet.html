@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Cửa Hàng Đồ Gia Dụng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="trangchu.html"><img src="image/logoptknobg.png" alt=""></a>
+            </div>
+            <div class="tim-kiem">
+                <input type="text" placeholder="Bạn tìm gì hôm nay?">
+                <button>Tìm</button>
+            </div>
+            <nav class="dieu-huong">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="danhmuc.html">Sản Phẩm</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Liên Hệ</a>
+            </nav>
+            <div class="gio-hang-icon">
+                <a href="giohang.html">
+                    <img src="./image/bieutuonggiohang.png" alt="Giỏ hàng">
+                    <span id="so-luong-trong-gio">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="chi-tiet-san-pham">
+                <div class="khu-vuc-anh">
+                    <div class="anh-chinh">
+                        <img src="image/spnoichienkhongdau.png" alt="Nồi chiên không dầu" id="anh-san-pham-chinh">
+                    </div>
+                    <div class="danh-sach-anh-nho">
+                        <img src="image/spnoichienkhongdau.png" alt="Ảnh nhỏ 1" class="active">
+                        <img src="image/spnoichienkhongdau2.jpg" alt="Ảnh nhỏ 2">
+                        <img src="image/spnoichienkhongdau3.jpg" alt="Ảnh nhỏ 3">
+                    </div>
+                </div>
+
+                <div class="thong-tin-san-pham">
+                    <h1>Nồi Chiên Không Dầu 5L Hiện Đại</h1>
+                    <p class="gia">1.790.000đ</p>
+                    <p class="mo-ta-ngan">
+                        Nồi chiên không dầu dung tích lớn 5L, công nghệ Rapid Air giúp giảm đến 80% lượng chất béo. Thiết kế sang trọng, dễ dàng vệ sinh.
+                    </p>
+                    <div class="hanh-dong-mua">
+                        <label for="so-luong">Số lượng:</label>
+                        <input type="number" id="so-luong" value="1" min="1">
+                        <button class="nut-them-gio-hang">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="khu-vuc-tabs">
+                <div class="cac-nut-tab">
+                    <button class="nut-tab active" data-tab="mo-ta">Mô Tả Chi Tiết</button>
+                    <button class="nut-tab" data-tab="thong-so">Thông Số Kỹ Thuật</button>
+                    <button class="nut-tab" data-tab="danh-gia">Đánh Giá</button>
+                </div>
+                <div class="noi-dung-tabs">
+                    <div id="mo-ta" class="noi-dung-tab active">
+                        <p>Đây là nội dung mô tả chi tiết về sản phẩm, nêu bật các công dụng, lợi ích và đặc điểm nổi trội. Công nghệ Rapid Air độc đáo của Nồi chiên không dầu cho phép bạn rán, nướng bánh, nướng và quay những món ăn nhanh ngon nhất và những bữa ăn có ít chất béo hơn so với nồi chiên thông thường, bằng cách sử dụng ít dầu hoặc không có dầu!</p>
+                    </div>
+                    <div id="thong-so" class="noi-dung-tab">
+                        <ul>
+                            <li><strong>Dung tích:</strong> 5 Lít</li>
+                            <li><strong>Công suất:</strong> 1800W</li>
+                            <li><strong>Chất liệu:</strong> Vỏ nhựa ABS cao cấp, lòng nồi hợp kim nhôm</li>
+                            <li><strong>Bảo hành:</strong> 24 tháng</li>
+                        </ul>
+                    </div>
+                    <div id="danh-gia" class="noi-dung-tab">
+                        <p>Chưa có đánh giá nào cho sản phẩm này.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="cot-footer">
+                <h3>Về Chúng Tôi</h3>
+                <p>Cửa hàng chuyên cung cấp các giải pháp gia dụng hiện đại, giúp cuộc sống của bạn trở nên dễ dàng và tiện nghi hơn.</p>
+            </div>
+            <div class="cot-footer">
+                <h3>Chăm Sóc Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                </ul>
+            </div>
+            <div class="cot-footer">
+                <h3>Liên Hệ</h3>
+                <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                <p>Email: hotro@email.com</p>
+                <p>Điện thoại: 0987 654 321</p>
+            </div>
+        </div>
+        <div class="ban-quyen">
+            <p>&copy; 2025 Cửa Hàng Của Bạn.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục Sản Phẩm - Cửa Hàng Đồ Gia Dụng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="trangchu.html"><img src="image/logoptknobg.png" alt=""></a>
+            </div>
+            <div class="tim-kiem">
+                <input type="text" placeholder="Bạn tìm gì hôm nay?">
+                <button>Tìm</button>
+            </div>
+            <nav class="dieu-huong">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="danhmuc.html">Sản Phẩm</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Liên Hệ</a>
+            </nav>
+            <div class="gio-hang-icon">
+                <a href="giohang.html">
+                    <img src="./image/bieutuonggiohang.png" alt="Giỏ hàng">
+                    <span id="so-luong-trong-gio">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tieu-de-trang">
+                <h1>Thiết Bị Nhà Bếp</h1>
+                <div class="thanh-sap-xep">
+                    <label for="sap-xep">Sắp xếp theo:</label>
+                    <select name="sap-xep" id="sap-xep">
+                        <option value="mac-dinh">Mặc định</option>
+                        <option value="gia-tang-dan">Giá tăng dần</option>
+                        <option value="gia-giam-dan">Giá giảm dần</option>
+                        <option value="ten-a-z">Tên A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="giao-dien-chinh">
+                <aside class="bo-loc">
+                    <h3>Bộ Lọc Sản Phẩm</h3>
+                    <div class="nhom-loc">
+                        <h4>Thương hiệu</h4>
+                        <label><input type="checkbox" name="thuong-hieu" value="sunhouse"> Sunhouse</label>
+                        <label><input type="checkbox" name="thuong-hieu" value="locknlock"> Lock&Lock</label>
+                        <label><input type="checkbox" name="thuong-hieu" value="philips"> Philips</label>
+                    </div>
+                    <div class="nhom-loc">
+                        <h4>Khoảng giá</h4>
+                        <label><input type="checkbox" name="gia" value="duoi-500"> Dưới 500.000đ</label>
+                        <label><input type="checkbox" name="gia" value="500-1tr"> 500.000đ - 1.000.000đ</label>
+                        <label><input type="checkbox" name="gia" value="tren-1tr"> Trên 1.000.000đ</label>
+                    </div>
+                </aside>
+
+                <section class="luoi-san-pham">
+                    <div class="danh-sach-san-pham" id="khu-vuc-san-pham-danhmuc">
+                        <div class="mot-san-pham">
+                            <img src="image/spnoicom.png" alt="Nồi cơm điện">
+                            <h4>Nồi Cơm Điện Tử</h4>
+                            <p class="gia">1.250.000đ</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                         <div class="mot-san-pham">
+                            <img src="image/spnoichienkhongdau.png" alt="Nồi chiên">
+                            <h4>Nồi Chiên Không Dầu 5L</h4>
+                            <p class="gia">1.790.000đ</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                         <div class="mot-san-pham">
+                            <img src="image/spmayxay.png" alt="Máy xay">
+                            <h4>Máy Xay Sinh Tố Đa Năng</h4>
+                            <p class="gia">890.000đ</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                         <div class="mot-san-pham">
+                             <img src="image/sprobot.png" alt="Robot hút bụi">
+                             <h4>Robot Hút Bụi Lau Nhà Pro</h4>
+                            <p class="gia">4.500.000đ</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="phan-trang">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="cot-footer">
+                <h3>Về Chúng Tôi</h3>
+                <p>Cửa hàng chuyên cung cấp các giải pháp gia dụng hiện đại, giúp cuộc sống của bạn trở nên dễ dàng và tiện nghi hơn.</p>
+            </div>
+            <div class="cot-footer">
+                <h3>Chăm Sóc Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                </ul>
+            </div>
+            <div class="cot-footer">
+                <h3>Liên Hệ</h3>
+                <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                <p>Email: hotro@email.com</p>
+                <p>Điện thoại: 0987 654 321</p>
+            </div>
+        </div>
+        <div class="ban-quyen">
+            <p>&copy; 2025 Cửa Hàng Của Bạn.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
